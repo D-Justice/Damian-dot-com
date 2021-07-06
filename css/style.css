@@ -122,7 +122,9 @@ footer {
 	width: 95%;
 	
 }
-/* .sticky {
+
+.sticky {
+
   position: fixed;
   top: 0;
   height: 70px;
@@ -136,8 +138,12 @@ footer {
   animation-name: logo-roll;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-} */
-/* @keyframes logo-roll {
+<<<<<<< HEAD
+} 
+
+@keyframes logo-roll {
+
+
 0% {
   transform: rotateX(0deg);
   transform: rotateY(180deg);
@@ -152,4 +158,5 @@ footer {
   transform: rotateY(360deg);
   opacity: 0.7;
 
-} */
+}
+}
