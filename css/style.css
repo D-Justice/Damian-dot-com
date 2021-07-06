@@ -19,6 +19,9 @@ body {
 	width: 100%;
 	height: 15vw;
 }
+.nav-background {
+	width: 100%;
+}
 nav {
 	background-color: darkblue;
 	width: 100%;
@@ -30,57 +33,20 @@ nav {
 	background-color: orange;
 	width: 10%;
 	height: 10vw;
-
+    
 	margin: auto;
 	position: relative;
 	top: 6.8vw;
 	border-radius: 50%;
-	z-index: 2500;
+	z-index: 100;
 }
 
 
-}
-.button {
+.upper {
+	height: 100%;
 	width: 100%;
-
-}
-.button:hover {
-	transition-duration: 1.5s;
-	transform: scale(1.1);
-	border-style: solid;
-	background-color: white;
-	border-width:2px;
-	border-color: black;
-}
-.homebtn {
-	font-size: 2vw;
-    width: 20%;
-    float: left;
-    margin-left: 2%;
-    margin-top: 0.2%
-}
-.aboutbtn {
-	font-size: 2vw;
-	width:20%;
-	float: left;
-	margin-left: 2%;
-	margin-top: 0.2%
-	
-}
-.contactbtn {
-	font-size: 2vw;
-	width: 20%;
-	float: right;
-	margin-left: 2%;
-	margin-right: 2%;
-	margin-top: 0.2%
-}
-.socialsbtn {
-	font-size: 2vw;
-	width: 20%;
-	float: right;
-	margin-left: 2%;
-	margin-top: 0.2%
+	background-color: black;
+	position: relative;
 	
 }
 .sect1 {
@@ -89,15 +55,15 @@ nav {
 	background-color:purple;
 	font-size: 2vw;
 	float: right;
-	margin: 3%;
+	margin: 2%;
 }
 
 .photo {
 	background-color: silver;
 	display: inline-block;
-
+    float: left;
 	width: 40%;
-	height: 20vw;
+	height: 40vw;
 	margin: 2%;
 }
 .sect2 {
@@ -125,36 +91,4 @@ footer {
 	
 	width: 95%;
 	
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  height: 70px;
-  width: 100%;
-}
-.stickyImage {
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  max-width: 245px;
-  animation-name: logo-roll;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-@keyframes logo-roll {
-0% {
-  transform: rotateX(0deg);
-  transform: rotateY(180deg);
-
-  opacity: 1;
-}
-90% {
-  opacity: 1;
-}
-100% {
-  transform: rotateX(360deg);
-  transform: rotateY(360deg);
-  opacity: 0.7;
-
-}
 }

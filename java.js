@@ -1,7 +1,7 @@
 window.onscroll = function() {
    stickyBois();
  };
- var navbar = document.getElementById("navbar");
+ var navbar = document.getElementById("btn");
  var sticky = navbar.offsetTop;
  var logo = document.getElementById("lego");
  var stickyImage = logo.offsetTop;
