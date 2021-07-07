@@ -1,0 +1,43 @@
+body, html {
+    height: 90vw;
+    width: 100%;
+    background-color: purple;
+}
+
+
+.wrapper {
+    height: 100%;
+}
+.homescreen {
+    background-color: pink;
+    height: 100%;
+    width: 100%;
+}
+.left_container {
+    background-color: red;
+    width: 35%;
+    height: 100%;
+    display:inline-block;
+}
+.right_container {
+    background-color: green;
+    width:64%;
+    height: 100%;
+    float: right;
+    display:inline-block;
+}   
+.left_section img {
+    display: flex;
+    
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid 4px black;
+    box-shadow: 10px 10px rgba(0,0,0,0.5);
+    margin: auto;
+    margin-top: 20%;
+}
+
+
+

@@ -4,55 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='./css/style.css'>
-    <link rel='stylesheet' href='./css/buttonStyles.css'>
-    
-    <title>My Website</title>
+    <link rel='stylesheet' href='./CSS/style.css'>
+    <link rel='stylesheet' href='./CSS/transitional_elements.css'>
+    <title>Damian Justice</title>
 </head>
 <body>
     <div class='wrapper'>
-        <header>
-            <div class='header-background'>
-                <div class='nav-background' id='lego'>
-                    <div id='fakepick' id='logo'>
-                        <p>.</p>
-                    </div>
-                </div>
-                    <nav id='navbar'>
-                        <div id='btn'>
-                            <a href='./index.html' class='homebtn button'>Home</a>
-                            <a href='./about.html' class='aboutbtn button'>About</a>
-                            <a href='./contact.html' class='contactbtn button'>Contact</a>
-                            <a href='./socials.html' class='socialsbtn button'>Socials</a>
-                        </div>
-                    </nav>
-                
-            </div>
-            
-            <!-- <img id='profile-pic' src='https://image.shutterstock.com/image-illustration/scene-wizard-reaching-hand-out-260nw-1570031575.jpg' alt='Profile picture'> -->
 
-        </header>
-        <div class='clearfix'></div>
-        <div class='upper'>
-                <div class='photo'>
-                    <p>.</p>
+        <div class='opening_wrapper_left' id='left'>
+            &nbsp;
+        </div>
+            <img src='./images/cover-Pic.jpg' id="button" onclick="myFunction()">
+            <div class='opening_wrapper_right' id='right'>
+                &nbsp;
+            </div>
+        <div class='homescreen'>
+            <!-- <nav>
+                <a href='./index.html'>Home</a>
+                <a href='./about.html'>About</a>
+                <a href='./work.html'>Work</a>
+                <a href='./socials.html'>Socials</a>
+            </nav> -->
+            <div class='left_container'>
+                <div class='left_section'>
+                    <img src='./images/profile-picture-of-young-handsome-man-sitting-on-sofa-2CATM1C.jpg' alt='Profile picture'>
+                    
                 </div>
-            <section class='sect1'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nisl ligula. In condimentum sem dapibus odio luctus, ut tempus orci malesuada. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacus urna, porttitor at semper et, bibendum et odio. In quam libero, dignissim eu ipsum at, sagittis dictum tortor. Donec vel enim eu elit convallis porta et et tellus. Suspendisse efficitur lacus ipsum, eu viverra quam tempor non. Integer et leo vel augue blandit ultrices dignissim ac felis. Mauris iaculis mauris ac neque luctus, eget vulputate ligula sollicitudin. Mauris eu velit lacus. Sed vitae tortor non nulla mattis porta. Maecenas dignissim tempor leo. Vivamus ac congue enim. Quisque sodales, erat feugiat imperdiet condimentum, mauris turpis ultricies enim, non dapibus risus ante sit amet nisl.</p>
-            </section>
+            </div>
+            <div class='right_container'>
+                <div class='right_section'>
+                    &nbsp;
+                </div>
+            </div>
         </div>
-        <div class='clearfix'></div>
-        <section class='sect2'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nisl ligula. In condimentum sem dapibus odio luctus, ut tempus orci malesuada. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacus urna, porttitor at semper et, bibendum et odio. In quam libero, dignissim eu ipsum at, sagittis dictum tortor. Donec vel enim eu elit convallis porta et et tellus. Suspendisse efficitur lacus ipsum, eu viverra quam tempor non. Integer et leo vel augue blandit ultrices dignissim ac felis. Mauris iaculis mauris ac neque luctus, eget vulputate ligula sollicitudin. Mauris eu velit lacus. Sed vitae tortor non nulla mattis porta. Maecenas dignissim tempor leo. Vivamus ac congue enim. Quisque sodales, erat feugiat imperdiet condimentum, mauris turpis ultricies enim, non dapibus risus ante sit amet nisl.</p>
-        </section>
+            
+            
     </div>
-    <div class='clearfix'>
-    </div>
-    <footer>
-        <div class='footer-pos'>
-            <p>.</p>
-        </div>
-    </footer>
-    <script src="java.js"></script>
+
+    <p id="demo" onclick="myFunction()">Click me.</p>
+<script>
+    function hide() {
+            var leftElement = document.getElementById('left');
+            var rightElement = document.getElementById('right');
+            var button = document.getElementById('button');
+
+            leftElement.classList.add('hide');
+            rightElement.classList.add('hide');
+            button.classList.add('hide');
+        }
+    function myFunction() {
+        var leftElement = document.getElementById('left');
+        var rightElement = document.getElementById('right');
+        var button = document.getElementById('button');
+        
+        
+        rightElement.classList.add('slide_right')
+        leftElement.classList.add('slide_left')
+        button.classList.add('buttonSlide');
+        setTimeout(hide, 3100);
+    }
+    </script>
 </body>
 </html>
