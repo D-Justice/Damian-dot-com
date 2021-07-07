@@ -1,0 +1,68 @@
+.opening_wrapper_left {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: orange;
+
+}
+
+#button {
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    margin-left:40%;
+    margin-top: 30vw;
+    z-index: 50;
+}
+.opening_wrapper_right {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    margin-left: 50%;
+    background-color: silver;
+
+}
+.hide {
+    display: none;
+}
+@keyframes test {
+    0% {
+        transform:translate(0,0);
+    }
+    100% {
+        transform:translate(150%,0%);
+    }
+}
+@keyframes test2 {
+    0% {
+        transform:translate(0,0);
+    }
+    100% {
+        transform:translate(-150%,0%);
+    }
+}
+@keyframes test3 {
+    0% {
+        transform:translate(0,0);
+    }
+    
+    100% {
+        transform:translate(-400%,0%);
+    }
+}
+.slide_left {
+    animation-name: test2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.buttonSlide {
+    animation-name: test3;
+    animation-duration: 3.1s;
+    animation-fill-mode: forwards;
+}
+.slide_right {
+    animation-name: test;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
