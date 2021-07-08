@@ -1,9 +1,9 @@
 .opening_wrapper_left {
     position: absolute;
-    height: 100%;
+    height: 80vw;
     width: 50%;
     background-color: orange;
-    display: none;
+    z-index: 999;
 
 }
 
@@ -14,16 +14,17 @@
     border-radius: 50%;
     margin-left:40%;
     margin-top: 30vw;
-    z-index: 50;
-    display: none;
+    z-index: 1000;
+    
 }
 .opening_wrapper_right {
     position: absolute;
-    height: 100%;
+    height: 80vw;
     width: 50%;
     margin-left: 50%;
     background-color: silver;
-    display: none;
+    z-index: 999;
+    
 }
 .hide {
     display: none;
