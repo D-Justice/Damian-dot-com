@@ -13,10 +13,11 @@ function myFunction() {
     let leftElement = document.getElementById('left');
     let rightElement = document.getElementById('right');
     let button = document.getElementById('button');
+    let clickHere = document.getElementById('home_click_here');
     
-    
-    rightElement.classList.add('slide_right')
-    leftElement.classList.add('slide_left')
+    clickHere.classList.add('buttonSlide');
+    rightElement.classList.add('slide_right');
+    leftElement.classList.add('slide_left');
     button.classList.add('buttonSlide');
     setTimeout(hide, 3100);
 }

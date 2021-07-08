@@ -1,8 +1,8 @@
 .opening_wrapper_left {
     position: absolute;
-    height: 80vw;
+    height: 85vw;
     width: 50%;
-    background-color: orange;
+    background-color: #BCB4A7;
     z-index: 999;
 
 }
@@ -17,9 +17,19 @@
     z-index: 1000;
     
 }
+#home_click_here {
+    position:absolute;
+    z-index: 1001;
+    width: 20%;
+    text-align: center;
+    margin-left: 39.5vw;
+    top: 34vw;
+    font-size: 3vw;
+    color: white;
+}
 .opening_wrapper_right {
     position: absolute;
-    height: 80vw;
+    height: 85vw;
     width: 50%;
     margin-left: 50%;
     background-color: silver;
@@ -68,4 +78,13 @@
     animation-name: test;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+}
+
+@media screen and (max-width:768px) {
+ .opening_wrapper_left {
+     height: 240vw;
+ }   
+ .opening_wrapper_right {
+     height: 240vw;
+ }
 }

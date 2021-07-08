@@ -1,30 +1,40 @@
+@font-face {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 body, html {
     height: 80vw;
     
     width: 100%;
     
-    background-color: purple;
+    background-color: #3E4B51;
 }
 
 
 .wrapper {
     height: 100%;
+    
+    
 }
 .homescreen {
-    background-color: pink;
+    background-color: #576971;
     height: 100%;
-    width: 90%;
+    width: 95%;
     margin: auto;
+    border-top: 1vw solid #576971;
+    border-bottom: 1vw solid #576971;
+    border-right: 0.8vw solid #576971;
+    overflow:hidden;
 }
 .left_container {
-    background-color: red;
+    background-color: #8E9796;
     width: 35%;
     height: 100%;
     display:inline-block;
 
 }
 .right_container {
-    background-color: green;
+    background-color: #3E4B51;
     width:64%;
     height: 100%;
     float: right;
@@ -45,3 +55,48 @@ body, html {
     margin-top: 20%;
 }
 
+.personalSummary {
+    font-size: 1.6vw;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 90%;
+    margin-left: 5%;
+}
+.proffesionalSkills {
+    font-size: 1.6vw;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+
+
+@media screen and (max-width:768px) {
+.right_container {
+       height: 200vw;
+    }
+ .left_container {
+     height: 200vw;
+ }
+ .homescreen {
+     height: 200vw;
+ }
+.personalSummary {
+    font-size: 0.8em;
+    position: absolute;
+    width: 50vw;
+    left: 37vw;
+    top: 1vw;
+    
+ 
+}
+.proffesionalSkills {
+    font-size: 0.8em;
+    position: absolute;
+    width: 50vw;
+    left: 37vw;
+    top: 20vw;
+  
+ 
+}
+}
