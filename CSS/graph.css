@@ -1,0 +1,232 @@
+.graph_container {
+    position: relative;
+    background-color: white;
+    width:  100%;
+    height: 30vw;
+    margin: auto;
+    margin-top: 15%;
+    overflow:hidden;
+}
+.graph {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+   
+    overflow:hidden;
+    background-color: turquoise;
+    /* z-index: 30; */
+}
+.heading {
+    background-color:red;
+    display: inline-block;
+    margin-left: 3vw;
+    position: absolute;
+    z-index: 300;       
+}
+#heading1 {
+    margin-left: 17vw;
+    font-size: 1.4vw;
+    background-color:gold;
+    height: 30vw;
+    width: 13vw;
+    left: -7vw;
+    padding-top: 2.4vw;
+    padding-left: 3vw;
+    top: -2vw;
+    z-index:1;
+}
+#heading2 {
+    margin-left: 28vw;
+    font-size: 1.7vw;
+    background-color:darkgoldenrod;
+    height: 30vw;
+    width: 11vw;
+    left: -5vw;
+    padding-top: 2vw;
+    padding-left: 4vw;
+    top: -2vw;
+    z-index:1;
+}
+#heading3 {
+    margin-left: 36.5vw;
+    font-size: 1.7vw;
+    background-color:silver;
+    height: 30vw;
+    width: 10vw;
+    left: -2vw;
+    padding-top: 2vw;
+    padding-left: 1.7vw;
+    top: -2vw;
+    z-index:1;
+}
+#heading4 {
+    margin-left: 47vw;
+    font-size: 1.7vw;
+    background-color:red;
+    height: 30vw;
+    width: 10.5vw;
+    left: -1.5vw;
+    padding-top: 2vw;
+    padding-left: 4vw;
+    top: -2vw;
+    z-index:1;
+}
+.languages {
+    position: absolute;
+    background-color: orange;
+    width: 10vw;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+.languages p {
+    position:relative;
+    font-size: 1.7vw;
+}
+
+#bar1 {
+    
+    position: relative;
+    display: block;
+    float:left;
+    background-color: yellow;
+    width: 100%;
+    height: 10%;
+    left: -85%;
+    top: 20%;
+    z-index: 3;
+    
+}
+#bar2 {
+    display: block;
+    position: relative;
+    float:left;
+    background-color: green;
+    width: 100%;
+    height: 10%;
+    left: -85%;
+    top: 30%;
+    z-index: 3;
+ 
+}
+#bar3 {
+    display: inline-block;
+    position: relative;
+    float:left;
+    background-color: skyblue;
+    width: 100%;
+    height: 10%;
+    left: -85%;
+    top: 40%;
+    z-index: 3;
+
+}
+#bar4 {
+    display: inline-block;
+    position: relative;
+    float:left;
+    background-color: purple;
+    width: 100%;
+    height: 10%;
+    left: -85%;
+    top: 50%;
+    z-index: 3;
+
+}
+
+.graph_button {
+    display: inline-block;
+    position: absolute;
+    float:left;
+    background-color: purple;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    left: 24vw;
+    top: 8vw;
+    z-index: 4;
+}
+.bar1_animation {
+    
+    animation-name: bar1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.bar2_animation {
+    animation-name: bar2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.bar3_animation {
+    animation-name: bar3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.bar4_animation {
+    animation-name: bar4;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#heading {
+    display: inline-block;
+    top: -1vw;
+    margin-left: 0.5vw;
+    float:right;
+}
+#lang1 {
+    display: inline-block;
+    top: -3vw;
+    margin-left: 0.5vw;
+}
+#lang2 {
+    display: inline-block;
+    top: 3vw;
+    margin-left: -5vw;
+    
+}
+#lang3 {
+    display: inline-block;
+    top: 3vw;
+    margin-left: 0.5vw;
+}
+#lang4 {
+    display: inline-block;
+    top: 4vw;
+    margin-left: 0.5vw;
+}
+.graph_button_del {
+    display: none;
+}
+@keyframes bar1 {
+    0% {
+        transform: translate(0%, 0);
+    }
+    100% {
+        transform: translate(50%, 0);
+    }
+}
+@keyframes bar2 {
+    0% {
+        transform: translate(0%, 0);
+    }
+    100% {
+        transform: translate(60%, 0);
+    }
+}
+@keyframes bar3 {
+    0% {
+        transform: translate(0%, 0);
+    }
+    100% {
+        transform: translate(70%, 0);
+    }
+}
+@keyframes bar4 {
+    0% {
+        transform: translate(0%, 0);
+    }
+    100% {
+        transform: translate(40%, 0);
+    }
+}
