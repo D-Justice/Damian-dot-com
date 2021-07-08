@@ -31,35 +31,7 @@ body, html {
     display:inline-block;
 
 }   
-.info_box {
-    position: relative;
-    background-color: white;
-    width:  75%;
-    height: 30vw;
-    margin: auto;
-    margin-top: 15%;
-    overflow:hidden;
-}
-.info_box_left {
-    background-color: blue;
-    display: inline-block;
-    position:relative;
-    width: 50%;
-    height: 100%;
-    float: left;
-    
-}
-.info_box_right {
-    background-color: red;
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    float:right;
-    
-}
-.information {
-    float: left;
-}
+
 
 .left_section img {
     display: flex;
@@ -72,89 +44,22 @@ body, html {
     margin: auto;
     margin-top: 20%;
 }
-.slide {
-    font-size: 2vw;
-    margin-left: 3%;
+
+.graph_container {
+    position: relative;
+    background-color: white;
+    width:  75%;
+    height: 30vw;
+    margin: auto;
+    margin-top: 15%;
+    overflow:hidden;
+}
+.graph {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: auto;
     margin-top: 3%;
-    display: inline;
-    position:absolute;
-}
-.slide1 {
-    
-}
-.slide2 {
-    display: none;
-}
-.slide3 {
-    display: none;
-}
-
-.slideLeaveLeft {
-    float:left;
-    display:inline;
-    position: absolute;
-    animation-name: slide_transition_leave_left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-.slideEnterRight {
-    display:inline-block;
-    position: absolute;
-    animation-name: slide_transition_enter_right;
-    animation-duration: 1s;
-    animation-fill-mode: reverse;
-}
-.slideHide {
-    display:none;
-}
-.slideShow {
-    display: inline-block;
-}
-.slideLeaveRight {
-    float:left;
-    position: absolute;
-    animation-name: slide_transition_leave_right;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-.slideEnterLeft {
-    display:inline-block;
-    position: absolute;
-    animation-name: slide_transition_enter_left;
-    animation-duration: 1s;
-    animation-fill-mode: reverse;
-}
-
-@keyframes slide_transition_enter_right {
-    0% {
-        transform: translate(50vw, 0);
-    }
-    
-    100% {
-        transform: translate(0vw, 0);
-    }
-}
-@keyframes slide_transition_leave_left {
-    0% {
-        transform: translate(0,0);
-    }
-    100% {
-        transform: translate(-110%, 0);
-    }
-}
-@keyframes slide_transition_enter_left {
-    0% {
-        transform: translate(-200%,0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-@keyframes slide_transition_leave_right {
-    0% {
-        transform: translate(0,0);
-    }
-    100% {
-        transform: translate(400%, 0);
-    }
+    background-color: turquoise;
+    /* z-index: 30; */
 }
