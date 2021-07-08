@@ -3,6 +3,7 @@
     height: 100%;
     width: 50%;
     background-color: orange;
+    display: none;
 
 }
 
@@ -14,6 +15,7 @@
     margin-left:40%;
     margin-top: 30vw;
     z-index: 50;
+    display: none;
 }
 .opening_wrapper_right {
     position: absolute;
@@ -21,7 +23,7 @@
     width: 50%;
     margin-left: 50%;
     background-color: silver;
-
+    display: none;
 }
 .hide {
     display: none;

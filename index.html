@@ -16,7 +16,7 @@
         </div>
             <img src='./images/cover-Pic.jpg' id="button" onclick="myFunction()">
             <div class='opening_wrapper_right' id='right'>
-                &nbsp;
+                
             </div>
         <div class='homescreen'>
             <!-- <nav>
@@ -28,12 +28,43 @@
             <div class='left_container'>
                 <div class='left_section'>
                     <img src='./images/profile-picture-of-young-handsome-man-sitting-on-sofa-2CATM1C.jpg' alt='Profile picture'>
-                    
+                    <div class= 'aboutMe'>
+                        <div class='personalSummary'>
+                            <h2>Personal Summary</h2>
+                            <p>I am an audio engineer with skills and
+                                experience in web design and video game
+                                development. My passions include
+                                computers and learning new and
+                                challenging concepts. I am looking to
+                                challenge myself and expand my career in a
+                                different direction.</p>
+                        </div>
+                        <div class='proffesionalSkills'>
+                            <h2>Professional Skills</h2>
+                            <p>Adept in: HTML5, CSS, Javascript, C#,
+                                Jquery <br>
+                                Currently Learning: Search Engine
+                                Optimization and Responsive Design <br>
+                                Personal Skills: Teamwork, Innovation,
+                                Creativity, Discipline</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class='right_container'>
                 <div class='right_section'>
-                    &nbsp;
+                    <div class='info_box'>
+                        <div class='info_box_left' id='left_click' onclick='slideShowLeft()'>
+                            <div class='information'>
+                                <p class='slide1 slide' id='slide1'>Information will go here</p>
+                                <p class='slide2 slide' id='slide2'>This is the second slide</p>
+                                <p class='slide3 slide' id='slide3'>This will be the final slide</p>
+                            </div>
+                        </div>
+                        <div class='info_box_right' id='right_click' onclick='slideShowRight()'>
+                            &nbsp;
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -41,27 +72,8 @@
             
     </div>
 
-<script>
-    function hide() {
-            var leftElement = document.getElementById('left');
-            var rightElement = document.getElementById('right');
-            var button = document.getElementById('button');
-
-            leftElement.classList.add('hide');
-            rightElement.classList.add('hide');
-            button.classList.add('hide');
-        }
-    function myFunction() {
-        var leftElement = document.getElementById('left');
-        var rightElement = document.getElementById('right');
-        var button = document.getElementById('button');
-        
-        
-        rightElement.classList.add('slide_right')
-        leftElement.classList.add('slide_left')
-        button.classList.add('buttonSlide');
-        setTimeout(hide, 3100);
-    }
+<script src='script.js'>
+    
     </script>
 </body>
 </html>
