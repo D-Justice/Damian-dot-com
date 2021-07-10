@@ -20,11 +20,12 @@
 #home_click_here {
     position:absolute;
     z-index: 1001;
+    font-family: 'Inconsolata', monospace;
     width: 20%;
     text-align: center;
-    margin-left: 39.5vw;
-    top: 34vw;
-    font-size: 3vw;
+    margin-left: 40vw;
+    top: 36vw;
+    font-size: 2.8vw;
     color: white;
 }
 .opening_wrapper_right {

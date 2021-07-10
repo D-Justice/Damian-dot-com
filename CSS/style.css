@@ -1,6 +1,4 @@
-@font-face {
-    font-family: 'Noto Sans JP', sans-serif;
-}
+
 
 body, html {
     height: 80vw;
@@ -10,7 +8,9 @@ body, html {
     background-color: #3E4B51;
 }
 
-
+p {
+font-family: 'Inconsolata', monospace;
+}
 .wrapper {
     height: 100%;
     
@@ -57,20 +57,51 @@ body, html {
 
 .personalSummary {
     font-size: 1.6vw;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Inconsolata', monospace;
     width: 90%;
     margin-left: 5%;
 }
 .proffesionalSkills {
     font-size: 1.6vw;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Inconsolata', monospace;
     width: 90%;
     margin-left: 5%;
 
 }
 
-
-
+.social_links {
+    display:inline-block;
+    
+    width: 100%;
+    background-color: #3e4b51;
+    height: 5vw;
+    margin-top:2.3vw;
+}
+#facebook_icon {
+    width: 3.5vw;
+    margin-top: 0.3vw;
+    margin-left: 41vw;
+    margin-right: 1vw;
+    border-radius: 10%;
+}
+#github_icon {
+    width: 3.5vw;
+    margin-top: 0.3vw;
+    margin-right: 1vw;
+    
+}
+#instagram_icon {
+    width: 3.5vw;
+    margin-top: 0.3vw;
+    margin-right: 1vw;
+    border-radius: 10%;
+}
+#medium_icon {
+    width: 3.5vw;
+    margin-top: 0.3vw;
+    margin-right: 1vw;
+    border-radius: 50%;
+}
 @media screen and (max-width:768px) {
 .right_container {
        height: 200vw;
@@ -98,5 +129,57 @@ body, html {
     top: 20vw;
   
  
+}
+@media screen and (max-width:375px) {
+.personalSummary {
+font-size: 0.5em;
+position: absolute;
+width: 50vw;
+left: 37vw;
+top: 4vw;
+    
+ 
+}
+.proffesionalSkills {
+font-size: 0.5em;
+position: absolute;
+width: 50vw;
+left: 37vw;
+top: 35vw;
+  
+ 
+}
+.social_links {
+display:inline-block;
+
+width: 100%;
+background-color: #3e4b51;
+height: 5vw;
+margin-top:190.3vw;
+}
+#facebook_icon {
+    width: 5.5vw;
+    margin-top: 0.3vw;
+    margin-left: 30vw;
+    margin-right: 1vw;
+    border-radius: 50%;
+}
+#github_icon {
+    width: 5.5vw;
+    margin-top: 0.3vw;
+    margin-right: 1vw;
+    border-radius: 50%;
+}
+#instagram_icon {
+    width: 5.5vw;
+    margin-top: 0.3vw;
+    margin-right: 1vw;
+    border-radius: 50%;
+}
+#medium_icon {
+    width: 5.5vw;
+    margin-top: 0.3vw;
+    margin-right: 1vw;
+    border-radius: 50%;
 }
 }

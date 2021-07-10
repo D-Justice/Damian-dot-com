@@ -5,7 +5,7 @@
     position: relative;
     background-color: white;
     width:  100%;
-    height: 20vw;
+    height: 25vw;
     margin: auto;
     left: 1vw;
     margin-top: 15%;
@@ -41,15 +41,15 @@
     position:absolute;
 }
 .slide1 {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Inconsolata', monospace;
 }
 .slide2 {
     display: none;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Inconsolata', monospace;
 }
 .slide3 {
     
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Inconsolata', monospace;
     display: none;
 }
 
@@ -170,4 +170,17 @@
     100% {
         transform: translate(100vw, 0);
     }
+}
+
+@media screen and (max-width:375px) {
+.info_box {
+position: absolute;
+background-color: white;
+width:  85vw;
+left: 8.5vw;
+height: 30vw;
+margin: auto;
+margin-top: 70vw;
+overflow:hidden;
+}
 }
