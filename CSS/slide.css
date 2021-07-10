@@ -93,6 +93,26 @@
     position: absolute;
     top: 20vw;
 }
+#arrow_left {
+position: absolute;
+width: 0;
+height: 0;
+margin-top: 20.5vw;
+border-top: 2vw solid transparent;
+border-right: 4vw solid #a79e96;
+border-bottom: 2vw solid transparent;
+
+}
+#arrow_right {
+position: absolute;
+width: 0;
+height: 0;
+margin-top: 20.5vw;
+margin-left:55.5vw;
+border-top: 2vw solid transparent;
+border-left: 4vw solid #a79e96;
+border-bottom: 2vw solid transparent; 
+}
 @keyframes slide_transition_enter_right {
     0% {
         transform: translate(50vw, 0);
